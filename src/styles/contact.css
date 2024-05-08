@@ -1,0 +1,77 @@
+/* Social link icon */
+.social__link-icon {
+  text-decoration: none;
+  color: #000d6b;
+  font-weight: 500;
+  font-size: 1.2rem;
+  transition: color 0.3s; /* Add transition for smooth color change */
+}
+
+.social__link-icon:hover {
+  color: #f9a826; /* Change color on hover */
+}
+
+/* Contact button */
+.contact__btn {
+  padding: 10px 20px; /* Increase padding for better touchability */
+  background: #000d6b;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer; /* Add cursor pointer for better UX */
+  transition: background-color 0.3s, color 0.3s; /* Add transition for smooth color change */
+}
+
+.contact__btn:hover {
+  background: #f9a826; /* Change background color on hover */
+  color: #fff; /* Change text color on hover */
+}
+
+/* Contact form */
+.contact__form {
+  margin-bottom: 20px;
+}
+
+.contact__form .textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none; /* Disable resizing for textarea */
+  transition: border-color 0.3s; /* Add transition for smooth border color change */
+}
+
+/* Style for Input */
+.contact__form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s; /* Add transition for smooth border color change */
+}
+
+/* Remove default styles for input placeholder */
+.contact__form input::placeholder {
+  color: #999; /* Change placeholder color */
+}
+
+/* Remove default styles for input:focus and textarea:focus */
+.contact__form input:focus,
+.contact__form textarea:focus {
+  outline: none;
+  border-color: #000d6b; /* Change border color on focus */
+}
+.contact__form input:focus,
+.contact__form textarea:focus {
+  outline: none; /* Remove default focus outline */
+  border-color: #000d6b; /* Change border color on focus */
+  box-shadow: 0 0 5px #000d6b; /* Add a custom focus indicator */
+}
+@media only screen and (max-width: 768px) {
+  .contact__btn {
+    margin-bottom: 40px;
+    font-size: 0.8rem;
+  }
+}

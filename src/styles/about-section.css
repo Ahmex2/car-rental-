@@ -1,0 +1,80 @@
+/* General styles for the About section items */
+.about__section-item {
+  column-gap: 3rem;
+}
+
+/* Style for icons within paragraph elements */
+.about__section-item p i {
+  color: #f9a826;
+  font-size: 1.1rem;
+}
+
+/* Media query for medium-sized screens */
+@media only screen and (max-width: 992px) {
+  .about__section-content h2 {
+    font-size: 1.5rem;
+  }
+  .about__section-item {
+    column-gap: 3rem;
+  }
+  .about__section-item p {
+    font-size: 0.8rem; /* Slightly increase font size */
+    margin-bottom: 0;
+  }
+
+  /* Style for icon within description */
+  .section__description i {
+    font-size: 1rem !important; /* Slightly increase icon size */
+  }
+}
+
+/* Media query for small-sized screens */
+@media only screen and (max-width: 768px) {
+  .about__img {
+    margin-top: 30px;
+  }
+}
+
+/* Media query for extra small-sized screens */
+@media only screen and (max-width: 576px) {
+  .about__section {
+    margin-top: 280px;
+  }
+}
+
+/* Style for section subtitle */
+.section__subtitle {
+  font-size: 1.2rem; /* Increase subtitle font size */
+  font-weight: bold;
+  margin-bottom: 0.5rem; /* Adjust as needed */
+}
+
+/* Style for the Contact Us link */
+.section__subtitle + a {
+  background: linear-gradient(to right, #f9a826, #ffc947);
+  color: #000; /* Text color */
+  text-decoration: none;
+  font-size: 1rem; /* Decrease font size */
+  padding: 0.5rem 1rem; /* Adjust padding for smaller size */
+  border: 2px solid #000; /* Border color */
+  border-radius: 8px; /* Rounded corners */
+  transition: all 0.3s ease; /* Smooth transition */
+  display: inline-block; /* Ensure button behaves as a block element */
+  text-align: center; /* Center text */
+}
+
+/* Hover effect for the Contact Us link */
+.section__subtitle + a:hover {
+  background: linear-gradient(to right, #001d3d, #003566); /* Change gradient to dark blue */
+  color: #fff; /* Change text color to white */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+  transform: translateY(-2px); /* Apply subtle upward movement */
+}
+
+/* Media query for responsiveness */
+@media only screen and (max-width: 768px) {
+  .section__subtitle + a {
+    font-size: 0.9rem; /* Adjust font size for smaller screens */
+    padding: 0.4rem 0.8rem; /* Adjust padding for smaller screens */
+  }
+}
